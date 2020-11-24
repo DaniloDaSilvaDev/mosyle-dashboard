@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Mosyle Dashboard</title>
+</head>
+<body>
+  <header class="page-header">
+
+    <div class="user-name">Danilo da Silva</div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li>
+          <span class="material-icons nav-icon"> settings</span>
+          Settings
+        </li>
+        <li>
+          <span class="material-icons nav-icon">power_settings_new</span>
+          Logout
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="container">
+    <section id="cards">
+
+      <div class="card card-devices">
+        <div class="card-top">
+          <div class="card-icon-large">
+            <span class="material-icons">devices</span>
+          </div>
+          <div class="card-icon-small">
+            <span class="material-icons load">cached</span>
+            <span class="card-title">20</span>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span>Devices</span>
+        </div>
+      </div>
+
+      <div class="card card-pending-commands">
+        <div class="card-top">
+          <div class="card-icon-large">
+            <span class="material-icons">list</span>
+          </div>
+          <div class="card-icon-small">
+            <span class="material-icons load">cached</span>
+            <span class="card-title">257</span>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span>pending commands</span>
+        </div>
+      </div>
+
+      <div class="card card-failed-commands">
+        <div class="card-top">
+          <div class="card-icon-large">
+            <span class="material-icons">warning</span>
+          </div>
+          <div class="card-icon-small">
+            <span class="material-icons load">cached</span>
+            <span class="card-title">2</span>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span>Failed commands</span>
+        </div>
+      </div>
+
+      <div class="card card-premium">
+        <div class="card-top">
+          <div class="card-icon-large">
+            <span class="material-icons">
+              payment
+              </span>
+          </div>
+          <div class="card-icon-small">
+            <span class="card-title">Premium</span>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span>Premium up to 24/11/2020</span>
+        </div>
+      </div>
+
+    <div class="card card-push-active">
+      <div class="card-top">
+        <div class="card-icon-large">
+          <span class="material-icons">
+            wifi_tethering
+            </span>
+        </div>
+        <div class="card-icon-small">
+          <span class="card-title">Push active</span>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <span>Expiration date: 06/07/2021</span>
+      </div>
+    </div>
+
+    </section>
+
+
+    <section id="graphics">
+
+      <div class="chart user-chart-card">
+        <div class="container-chart">
+          <canvas id="pie-chart"></canvas>
+        </div>
+
+        <div class="chart-title title-user">
+          <span>User</span>
+        </div>
+
+      </div>
+
+      <div class="chart card-sent-commands">
+        <div class="container-chart">
+          <canvas id="line-chart"></canvas>
+        </div>
+
+        <div class="chart-title title-commands">
+          <span>Sent Commands</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="tables-wrap">
+
+      <div class="table">
+
+        <div class="tables-header last-commands-teachers-header">
+          <span>Last commands applied by teachers</span>
+        </div>
+
+
+        <div class="table-box">
+
+
+          <div class="last-commands-teachers-row">
+            <span class="material-icons user-icon"> person</span>
+            <div class="last-commands-text-row">
+              <span class="name-teacher">Danilo da Silva ADMIN applied a Quick Poll</span>
+              <span class="date-applied"><strong>2020</strong> - Magic</span>
+              <span class="days-ago">1 day ago</span>
+            </div>
+          </div>
+          
+          <div class="last-commands-teachers-row">
+            <span class="material-icons user-icon"> person</span>
+            <div class="last-commands-text-row">
+              <span class="name-teacher">Danilo da Silva ADMIN applied a Quick Poll</span>
+              <span class="date-applied"><strong>2020</strong> - Magic</span>
+              <span class="days-ago">1 day ago</span>
+            </div>
+          </div>
+
+          <div class="last-commands-teachers-row">
+            <span class="material-icons user-icon"> person</span>
+            <div class="last-commands-text-row">
+              <span class="name-teacher">Danilo da Silva ADMIN applied a Quick Poll</span>
+              <span class="date-applied"><strong>2020</strong> - Magic</span>
+              <span class="days-ago">1 day ago</span>
+            </div>
+          </div>
+
+          <div class="last-commands-teachers-row">
+            <span class="material-icons user-icon"> person</span>
+            <div class="last-commands-text-row">
+              <span class="name-teacher">Danilo da Silva ADMIN applied a Quick Poll</span>
+              <span class="date-applied"><strong>2020</strong> - Magic</span>
+              <span class="days-ago">1 day ago</span>
+            </div>
+          </div>
+
+          <div class="last-commands-teachers-row">
+            <span class="material-icons user-icon"> person</span>
+            <div class="last-commands-text-row">
+              <span class="name-teacher">Danilo da Silva ADMIN applied a Quick Poll</span>
+              <span class="date-applied"><strong>2020</strong> - Magic</span>
+              <span class="days-ago">1 day ago</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    
+      <div class="table">
+
+        <div class="tables-header alerts-header">
+          <span>Alerts</span>
+          <span>See more</span>
+        </div>
+
+
+        <div class="table-box">
+
+          <div class="alerts-row">
+            <img class="icon-alerts" src="./assets/icons/icon-book.png" alt="book icon">
+            <div class="alerts-text-row">
+              <span class="">Students without a Class Period</span>
+              <span class="">62820</span>
+            </div>
+          </div>
+
+          <div class="alerts-row">
+            <img class="icon-alerts" src="./assets/icons/icon-teacher.png" alt="book icon">
+            <div class="alerts-text-row">
+              <span class="">Teachers without Class</span>
+              <span class="">15673</span>
+            </div>
+          </div>
+
+          <div class="alerts-row">
+            <img class="icon-alerts" src="./assets/icons/icon-school.png" alt="book icon">
+            <div class="alerts-text-row">
+              <span class="">Students without a grade level</span>
+              <span class="">119</span>
+            </div>
+          </div>
+
+          <div class="alerts-row">
+            <img class="icon-alerts" src="./assets/icons/icon-wifi.png" alt="book icon">
+            <div class="alerts-text-row">
+              <span class="">No connection</span>
+              <span class="">13</span>
+            </div>
+          </div>
+
+          <div class="alerts-row">
+            <img class="icon-alerts" src="./assets/icons/icon-expired-token.png" alt="book icon">
+            <div class="alerts-text-row">
+              <span class="">Expired push token</span>
+              <span class="">10</span>
+            </div>
+          </div>
+
+          <div class="alerts-row">
+            <img class="icon-alerts" src="./assets/icons/icon-book.png" alt="book icon">
+            <div class="alerts-text-row">
+              <span class="">Students without a Class Period</span>
+              <span class="">62820</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+  <script src="./js/pieChart.js"></script>
+  <script src="./js/lineChart.js"></script>
+</body>
+</html>
